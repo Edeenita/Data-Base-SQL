@@ -23,6 +23,20 @@
             "Edad" de un "Estudiante" no se puede descomponer en partes más pequeñas.
             ➡ Atributos complejos: pueden dividirse en subpartes más pequeñas que 
             tienen su propio significado, "Nombre Completo" puede dividirse en "Nombre" y "Apellido".
+            ➡ Key: Son atributos identifican de manera única a una entidad dentro de un conjunto de entidades
 
     ➡ Relaciones: Describen cómo las entidades están asociadas entre sí. 
        Ejemplo: La relación entre "Estudiante" y "Curso" sería "Inscrito en"..
+
+## Ejercicio 1 🤓☝🏻:
+    
+#### Pensar una *ENTIDAD* que tenga 5 atributos, 1 _Multivalor_ , 1 KEY.
+
+    ➡ Entidad: Automovil
+        ➡ Atributos
+            ➡ Multivalor: Accesorios
+            ➡ Key: Patente
+            ➡ Atributo: Modelo
+            ➡ Atributo: Marca
+            ➡ Atributo: Color
+    ![Diagrama ER ejercicio 1](./public/img/ej1MER.png)
