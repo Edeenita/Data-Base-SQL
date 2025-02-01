@@ -39,4 +39,4 @@
             ➡ Atributo: Modelo
             ➡ Atributo: Marca
             ➡ Atributo: Color
-    ![Diagrama ER ejercicio 1](./public/img/ej1MER.png)
+![Diagrama ER ejercicio 1](./public/img/ej1MER.png)
