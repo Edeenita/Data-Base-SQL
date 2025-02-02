@@ -47,5 +47,7 @@
     representa un campo dentro del registro.
     ➡ Campo (Field): Es una columna en una tabla que representa 
     un atributo específico de los datos almacenados.
+    ➡ Valor del campo (Field Value): Es el dato específico almacenado 
+    en un campo para un registro en una tabla.
     ➡ Regristo (Record): Es una fila en una tabla que representa 
     una única instancia de los datos almacenados.
