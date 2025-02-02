@@ -40,3 +40,12 @@
             ➡ Atributo: Marca
             ➡ Atributo: Color
 ![Diagrama ER ejercicio 1](./public/img/MERej1.png)
+
+## Conceptos
+    ➡ Tabla (Table): Organiza los datos en filas y columnas, 
+    cada fila representa un registro único, y cada columna 
+    representa un campo dentro del registro.
+    ➡ Campo (Field): Es una columna en una tabla que representa 
+    un atributo específico de los datos almacenados.
+    ➡ Regristo (Record): Es una fila en una tabla que representa 
+    una única instancia de los datos almacenados.
