@@ -88,4 +88,4 @@
                 ➡ Ejemplo: En la tabla "turnos_medicos", el campo "id_usuario" es una clave foránea 
                 que referencia a "id_usuario" en la tabla "usuarios".
                 ➡ Se utiliza para establecer las relaciones entre tablas.
-![MER](./public/img/Turnos%20medicos.png)
+![MER](./public/img/MERdb1.png)
