@@ -51,3 +51,9 @@
     en un campo para un registro en una tabla.
     ➡ Regristo (Record): Es una fila en una tabla que representa 
     una única instancia de los datos almacenados.
+    ➡ Tipos de datos (Data Types): Definen el tipo de datos de un campo.
+        ➡ Integer: Números enteros.
+        ➡ Text: Cadenas de texto.
+        ➡ Blob: Datos binarios grandes (imágenes o archivos).
+        ➡ Real: Valones numéricosúmeros con decimales.
+        ➡ Numeric: Valores numéricos enteros y decimales.
