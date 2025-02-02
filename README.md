@@ -57,3 +57,13 @@
         ➡ Blob: Datos binarios grandes (imágenes o archivos).
         ➡ Real: Valones numéricos con decimales.
         ➡ Numeric: Valores numéricos enteros y decimales (Matemática precisa).
+    ➡ Query: Obtener informacion de una base de datos, 
+    recuperar, insertar, actualizar o eliminar datos
+        ➡ * = Obetener todo
+            
+## Conceptos Practicos
+    ➡ Obtener todos los registros de una tabla:
+                ➡ SELECT * FROM *nombre de la tabla*;
+    ➡ Insertar datos en una tabla
+                ➡
+        ➡ Los valoes siempre van entre ' '
