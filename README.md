@@ -30,7 +30,7 @@
 
 ## Ejercicio 1 🤓☝🏻:
     
-#### Pensar una *ENTIDAD* que tenga 5 atributos, 1 _Multivalor_ , 1 KEY.
+#### Pensar una *ENTIDAD* que tenga 5 atributos, 1 _Multivalor_ , 1 _KEY_.
 
     ➡ Entidad: Automovil
         ➡ Atributos
