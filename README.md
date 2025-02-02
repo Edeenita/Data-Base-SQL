@@ -83,3 +83,9 @@
             campos que identifica de manera única cada registro en una tabla.
                 ➡ Ejemplo: En la tabla "Usuarios", el campo "id_usuario" es la clave primaria.
                 ➡ Las claves primarias deben ser únicas y no nulas.
+            ➡ Clave foránea (Foreign Key): Un campo o combinación de campos 
+            en una tabla que se refiere a la clave primaria de otra tabla.
+                ➡ Ejemplo: En la tabla "turnos_medicos", el campo "id_usuario" es una clave foránea 
+                que referencia a "id_usuario" en la tabla "usuarios".
+                ➡ Se utiliza para establecer las relaciones entre tablas.
+![MER](./public/img/Turnos%20medicos.png)
