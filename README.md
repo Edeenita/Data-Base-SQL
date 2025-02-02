@@ -55,5 +55,5 @@
         ➡ Integer: Números enteros.
         ➡ Text: Cadenas de texto.
         ➡ Blob: Datos binarios grandes (imágenes o archivos).
-        ➡ Real: Valones numéricosúmeros con decimales.
-        ➡ Numeric: Valores numéricos enteros y decimales.
+        ➡ Real: Valones numéricos con decimales.
+        ➡ Numeric: Valores numéricos enteros y decimales (Matemática precisa).
