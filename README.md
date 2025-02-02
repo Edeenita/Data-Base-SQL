@@ -92,3 +92,35 @@
 
 ## Northwind Data Base
 ![Northwind ERD](./public/img/Northwind_E-R_Diagram.png)
+
+- **Customers (Clientes)**: Almacena información sobre los clientes, como `CustomerID` (clave primaria), `CompanyName`, `ContactName`, `ContactTitle`, `Address`, `City`, `Region`, `PostalCode`, `Country`, `Phone`, y `Fax`.
+
+- **Orders (Pedidos)**: Almacena información sobre los pedidos realizados por los clientes. Incluye `OrderID` (clave primaria), `CustomerID` (clave foránea que referencia a `Customers`), `EmployeeID` (clave foránea que referencia a `Employees`), `OrderDate`, `RequiredDate`, `ShippedDate`, `ShipVia`, `Freight`, `ShipName`, `ShipAddress`, `ShipCity`, `ShipRegion`, `ShipPostalCode`, y `ShipCountry`.
+
+- **Order Details (Detalles de Pedidos)**: Almacena información detallada sobre cada producto en un pedido. Incluye `OrderID` (clave foránea que referencia a `Orders`), `ProductID` (clave foránea que referencia a `Products`), `UnitPrice`, `Quantity`, y `Discount`.
+
+- **Products (Productos)**: Almacena información sobre los productos disponibles. Incluye `ProductID` (clave primaria), `ProductName`, `SupplierID` (clave foránea que referencia a `Suppliers`), `CategoryID` (clave foránea que referencia a `Categories`), `QuantityPerUnit`, `UnitPrice`, `UnitsInStock`, `UnitsOnOrder`, `ReorderLevel`, y `Discontinued`.
+
+- **Suppliers (Proveedores)**: Almacena información sobre los proveedores de productos. Incluye `SupplierID` (clave primaria), `CompanyName`, `ContactName`, `ContactTitle`, `Address`, `City`, `Region`, `PostalCode`, `Country`, `Phone`, `Fax`, y `HomePage`.
+
+- **Categories (Categorías)**: Almacena información sobre las categorías de productos. Incluye `CategoryID` (clave primaria), `CategoryName`, y `Description`.
+
+- **Employees (Empleados)**: Almacena información sobre los empleados. Incluye `EmployeeID` (clave primaria), `LastName`, `FirstName`, `Title`, `TitleOfCourtesy`, `BirthDate`, `HireDate`, `Address`, `City`, `Region`, `PostalCode`, `Country`, `HomePhone`, `Extension`, `Photo`, `Notes`, `ReportsTo`, y `PhotoPath`.
+
+- **Shippers (Transportistas)**: Almacena información sobre las compañías de transporte. Incluye `ShipperID` (clave primaria), `CompanyName`, y `Phone`.
+
+### Relaciones entre tablas
+
+- **Customers** y **Orders**: `CustomerID` en `Orders` es una clave foránea que referencia a `CustomerID` en `Customers`. Esto indica qué cliente realizó cada pedido.
+
+- **Orders** y **Order Details**: `OrderID` en `Order Details` es una clave foránea que referencia a `OrderID` en `Orders`. Esto detalla qué productos están incluidos en cada pedido.
+
+- **Products** y **Order Details**: `ProductID` en `Order Details` es una clave foránea que referencia a `ProductID` en `Products`. Esto indica qué productos específicos están en cada detalle de pedido.
+
+- **Products** y **Suppliers**: `SupplierID` en `Products` es una clave foránea que referencia a `SupplierID` en `Suppliers`. Esto indica qué proveedor suministra cada producto.
+
+- **Products** y **Categories**: `CategoryID` en `Products` es una clave foránea que referencia a `CategoryID` en `Categories`. Esto clasifica los productos en diferentes categorías.
+
+- **Orders** y **Employees**: `EmployeeID` en `Orders` es una clave foránea que referencia a `EmployeeID` en `Employees`. Esto indica qué empleado gestionó cada pedido.
+
+- **Orders** y **Shippers**: `ShipVia` en `Orders` es una clave foránea que referencia a `ShipperID` en `Shippers`. Esto indica qué compañía de transporte se utilizó para enviar cada pedido.
