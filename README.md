@@ -58,12 +58,28 @@
         ➡ Real: Valones numéricos con decimales.
         ➡ Numeric: Valores numéricos enteros y decimales (Matemática precisa).
     ➡ Query: Obtener informacion de una base de datos, 
-    recuperar, insertar, actualizar o eliminar datos
-        ➡ * = Obetener todo
+    recuperar, insertar, actualizar o eliminar datos.
+        ➡ * = Obetener todo.
+            ➡ Los textos siempre van entre ' '.
             
 ## Conceptos Practicos
     ➡ Obtener todos los registros de una tabla:
                 ➡ SELECT * FROM *nombre de la tabla*;
-    ➡ Insertar datos en una tabla
-                ➡
-        ➡ Los valoes siempre van entre ' '
+    ➡ CRUD: Operaciones básicas en una base de datos.
+            ➡ Create (Crear): INSERT INTO *nombre de la tabla* (campo1, campo2, campo3) 
+                               VALUES ('valor1', 'valor2', 'valor3');
+                    Ejmeplo: INSERT INTO usuarios (nombre, apellido, edad)
+                             VALUES	('Edena', 'SQL', 20) 
+                     ➡ Execution finished without errors.
+                        Result: query executed successfully. Took 2ms, 1 rows affected
+                        At line 1:
+                        INSERT INTO usuarios (nombre, apellido, edad)
+                        VALUES	('Edena', 'SQL', '20')
+            ➡ Read (Leer): SELECT * FROM *nombre de la tabla*;
+            ➡ Update (Actualizar): UPDATE *nombre de la tabla* SET campo1 = 'valor1' WHERE condición;
+            ➡ Delete (Eliminar): DELETE FROM *nombre de la tabla* WHERE condición;
+    ➡ ID: Identificador único para cada registro en una tabla.
+            ➡ Clave primaria (Primary Key): Un campo o combinación de 
+            campos que identifica de manera única cada registro en una tabla.
+                ➡ Ejemplo: En la tabla "Usuarios", el campo "id_usuario" es la clave primaria.
+                ➡ Las claves primarias deben ser únicas y no nulas.
