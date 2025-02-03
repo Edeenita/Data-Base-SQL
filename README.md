@@ -190,5 +190,6 @@
     4️⃣ SELECT * FROM Products WHERE CategoryID = 4
     5️⃣ SELECT * FROM Employees WHERE BirthDate < '1960-01-01'
     6️⃣ SELECT * FROM Products WHERE Price BETWEEN 10 AND 30
+        ➡  SELECT * FROM Products WHERE Price >= 10 AND Price <= 30
     7️⃣ SELECT * FROM Suppliers WHERE Country != 'USA' AND Country != 'UK'
     8️⃣ SELECT * FROM Customers WHERE CustomerName LIKE 'B%'
