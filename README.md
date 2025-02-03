@@ -96,6 +96,12 @@
                         ➡ Jerarquía de caracteres especiales: !, ", #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;,
                         <, =, >, ?, @, [, \, ], ^, _, `, {, |, }, ~
                 8. Blob: Los binarios no se ordenan directamente.
+    ➡ GROUP BY: Se utiliza para agrupar filas que tienen valores iguales en columnas especificadas.
+        ➡ Ejemplo: SELECT departamento, COUNT(*) FROM empleados GROUP BY departamento;
+            ➡ Esto agrupa los registros por el campo `departamento` y cuenta el número de empleados en cada departamento.
+        ➡ Uso: Agrupar datos para realizar funciones de agregación como `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.
+            ➡ Ejemplo: SELECT categoria, AVG(precio) FROM productos GROUP BY categoria;
+                ➡ Esto agrupa los productos por `categoria` y calcula el precio promedio en cada categoría.
     ➡ DISTINCT: Eliminar los registros duplicados en los resultados de una consulta SQL.
         ➡ Ejemplo: SELECT DISTINCT nombre FROM usuarios;
             ➡ Devuelve solo los nombres únicos y sin repetir de la columna `nombre` en la tabla `usuarios`.
@@ -255,3 +261,4 @@
     ➡ ROUND: Redondea un número a un número especificado de decimales.
         ➡ Ejemplo: SELECT ROUND(AVG(precio), 2) FROM productos;
             ➡ Devuelve el promedio valores de la columna `precio` redondeados a 2 decimales en la tabla `productos`.
+    
