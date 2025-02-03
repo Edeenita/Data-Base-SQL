@@ -142,7 +142,6 @@
                 ➡ Ejemplo: En la tabla "turnos_medicos", el campo "id_usuario" es una clave foránea 
                 que referencia a "id_usuario" en la tabla "usuarios".
                 ➡ Se utiliza para establecer las relaciones entre tablas.
-![MER](./public/img/MERdb1.png)
 
 ## Northwind Data Base
 ![Northwind ERD](./public/img/Northwind_E-R_Diagram.png)
