@@ -171,3 +171,24 @@
 - **Orders** y **Employees**: `EmployeeID` en `Orders` es una clave foránea que referencia a `EmployeeID` en `Employees`. Esto indica qué empleado gestionó cada pedido.
 
 - **Orders** y **Shippers**: `ShipVia` en `Orders` es una clave foránea que referencia a `ShipperID` en `Shippers`. Esto indica qué compañía de transporte se utilizó para enviar cada pedido.
+
+### Ejercicio 2 de consultas con WHERE 🤓☝🏻
+
+1️⃣ Encuentra todas las ventas realizadas por el empleado con ID 3.
+2️⃣ Lista todos los productos que puedes comprar por menos de $20.
+3️⃣ Muestra los clientes que NO son de México.
+4️⃣  Muestra los productos que tienen una categoria ID 4
+5️⃣Lista los empleados que nacieron antes de 1960.
+6️⃣ Encuentra los productos que cuestan entre $10 y $30.
+7️⃣ Muestra los proveedores que no son de Estados Unidos ni del Reino Unido.
+8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
+
+#### Soluciones:
+    1️⃣ SELECT * FROM Orders WHERE EmployeeID = 3
+    2️⃣ SELECT * FROM Products WHERE Price < 20
+    3️⃣ SELECT * FROM Customers WHERE Country != "Mexico"
+    4️⃣ SELECT * FROM Products WHERE CategoryID = 4
+    5️⃣ SELECT * FROM Employees WHERE BirthDate < '1960-01-01'
+    6️⃣ SELECT * FROM Products WHERE Price BETWEEN 10 AND 30
+    7️⃣ SELECT * FROM Suppliers WHERE Country != 'USA' AND Country != 'UK'
+    8️⃣ SELECT * FROM Customers WHERE CustomerName LIKE 'B%'
