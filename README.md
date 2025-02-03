@@ -185,6 +185,8 @@
     8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
     9️⃣ Lista todos los productos que puedes comprar por menos de $15 o sea carne 
         pero que su proveedor de carne sea ID 7
+    🔟 Lista los clientes con ID mayor o igual que 50 y menor que 55 pero que
+        no sean de Argentina o Leipzig
 
 #### Posibles Soluciones:
     1️⃣ SELECT * FROM Orders WHERE EmployeeID = 3
@@ -199,3 +201,6 @@
         ➡  SELECT * FROM Suppliers WHERE NOT Country = 'USA' AND NOT Country = 'UK'
     8️⃣ SELECT * FROM Customers WHERE CustomerName LIKE 'B%'
     9️⃣ SELECT * FROM Products WHERE Price < 15 OR CategoryID = 6 AND SupplierID = 7
+    🔟 SELECT * FROM Customers WHERE CustomerID >= 50
+        AND CustomerID < 55
+        AND (Country != 'Argentina' AND City != 'Leipzig') 
