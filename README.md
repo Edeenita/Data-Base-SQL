@@ -185,7 +185,7 @@
     8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
     9️⃣ Lista todos los productos que puedes comprar por menos de $15 o sea carne 
         pero que su proveedor de carne sea ID 7
-    🔟 Lista los clientes con ID mayor o igual que 50 y menor que 55 pero que
+    🔟 Lista los 5 primeros clientes con ID mayor o igual que 50 pero que
         no sean de Argentina o Leipzig
 
 #### Posibles Soluciones:
@@ -204,3 +204,4 @@
     🔟 SELECT * FROM Customers WHERE CustomerID >= 50
         AND CustomerID < 55
         AND (Country != 'Argentina' AND City != 'Leipzig') 
+        LIMIT 5
