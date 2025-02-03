@@ -68,13 +68,6 @@
     ➡ CRUD: Operaciones básicas en una base de datos.
             ➡ Create (Crear): INSERT INTO *nombre de la tabla* (campo1, campo2, campo3) 
                                VALUES ('valor1', 'valor2', 'valor3');
-                    Ejmeplo: INSERT INTO usuarios (nombre, apellido, edad)
-                             VALUES	('Edena', 'SQL', 20) 
-                     ➡ Execution finished without errors.
-                        Result: query executed successfully. Took 2ms, 1 rows affected
-                        At line 1:
-                        INSERT INTO usuarios (nombre, apellido, edad)
-                        VALUES	('Edena', 'SQL', '20')
             ➡ Read (Leer): SELECT * FROM *nombre de la tabla*;
             ➡ Update (Actualizar): UPDATE *nombre de la tabla* SET campo1 = 'valor1' WHERE condición;
             ➡ Delete (Eliminar): DELETE FROM *nombre de la tabla* WHERE condición;
@@ -106,6 +99,32 @@
     ➡ DISTINCT: Eliminar los registros duplicados en los resultados de una consulta SQL.
         ➡ Ejemplo: SELECT DISTINCT nombre FROM usuarios;
             ➡ Devuelve solo los nombres únicos y sin repetir de la columna `nombre` en la tabla `usuarios`.
+    ➡ WHERE: Filtrar los registros en una consulta SQL según una condición específica.
+        ➡ Ejemplo: SELECT * FROM usuarios WHERE edad = 18;
+            ➡ Devuelve todos los registros de la tabla `usuarios` donde la columna `edad` igual que 18.
+    ➡ Condiciones que se pueden usar:
+            1. `=`: Igual a
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad = 18;
+            2. `!=` o `<>`: Diferente de
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad != 18;
+            3. `>`: Mayor que
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad > 18;
+            4. `<`: Menor que
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad < 18;
+            5. `>=`: Mayor o igual que
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad >= 18;
+            6. `<=`: Menor o igual que
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad <= 18;
+            7. `BETWEEN`: Dentro de un rango de valores
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad BETWEEN 18 AND 25;
+            8. `LIKE`: Coincide con un patrón
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE nombre LIKE 'J%';
+            9. `IN`: Coincide con cualquiera de una lista de valores
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IN (18, 20, 22);
+            10. `IS NULL`: Es nulo
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IS NULL;
+            11. `IS NOT NULL`: No es nulo
+                ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IS NOT NULL;
     ➡ ID: Identificador único para cada registro en una tabla.
             ➡ Clave primaria (Primary Key): Un campo o combinación de 
             campos que identifica de manera única cada registro en una tabla.
