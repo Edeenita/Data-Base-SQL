@@ -260,5 +260,6 @@
             ➡ Devuelve un registro aleatorio de la tabla `usuarios`.
     ➡ ROUND: Redondea un número a un número especificado de decimales.
         ➡ Ejemplo: SELECT ROUND(AVG(precio), 2) FROM productos;
-            ➡ Devuelve el promedio valores de la columna `precio` redondeados a 2 decimales en la tabla `productos`.
+            ➡ Devuelve el promedio valores de la columna `precio` 
+            redondeados a 2 decimales en la tabla `productos`.
     
