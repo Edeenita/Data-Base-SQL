@@ -125,7 +125,13 @@
                 ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IS NULL;
             11. `IS NOT NULL`: No es nulo
                 ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IS NOT NULL;
-            12. `NOT`: Se utiliza para invertir el resultado de una condición en una consulta SQL.
+            12. `NOT`: Invertir el resultado de una condición en una consulta SQL.
+            13. `LIMIT`: Limitar el número de registros devueltos en una consulta SQL.
+                ➡ Ejemplo: SELECT * FROM usuarios LIMIT 10;
+                    ➡ Esto devuelve los primeros 10 registros de la tabla `usuarios`.
+                ➡ También se puede usar con `OFFSET` para especificar el punto de inicio:
+                    ➡ Ejemplo: SELECT * FROM usuarios LIMIT 10 OFFSET 5;
+                        ➡ Esto devuelve 10 registros comenzando desde el sexto registro (desplazamiento de 5).
     ➡ ID: Identificador único para cada registro en una tabla.
             ➡ Clave primaria (Primary Key): Un campo o combinación de 
             campos que identifica de manera única cada registro en una tabla.
@@ -205,3 +211,24 @@
         AND CustomerID < 55
         AND (Country != 'Argentina' AND City != 'Leipzig') 
         LIMIT 5
+
+## != vs NOT
+
+    ➡ != (o <>): Comparar valores y seleccionar registros donde los valores no son iguales.
+        ➡ Ejemplo: SELECT * FROM usuarios WHERE edad != 18;
+            ➡ Devuelve todos los registros de la tabla `usuarios` donde la columna `edad` no es igual a 18.
+        ➡ Uso: Filtrar registros que no cumplen con una condición específica de igualdad.
+        Cuándo usar: Cuando se necesita comparar directamente dos valores 
+                     y seleccionar registros donde los valores no coinciden.
+
+    ➡ NOT: Se utiliza para invertir el resultado de una condición en una consulta SQL.
+        ➡ Ejemplo: SELECT * FROM usuarios WHERE NOT edad = 18;
+            ➡ Devuelve todos los registros de la tabla `usuarios` donde la columna `edad` no es igual a 18.
+        ➡ Uso: Excluir registros que cumplen con una condición específica.
+        ➡ Cuándo usar: Cuando necesitas invertir el resultado de una condición, 
+                        especialmente al trabajar con múltiples condiciones o con operadores como:
+                        `BETWEEN`, `LIKE`, `IN`, etc.
+            ➡ Ejemplo: SELECT * FROM usuarios WHERE nombre NOT LIKE 'J%';
+                ➡ Devuelve todos los registros donde la columna `nombre` no comienza con 'J'.
+            ➡ Ejemplo: SELECT * FROM usuarios WHERE edad NOT BETWEEN 18 AND 25;
+                ➡ Devuelve todos los registros donde la columna `edad` no está entre 18 y 25.
