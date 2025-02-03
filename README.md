@@ -231,3 +231,27 @@
                 ➡ Devuelve todos los registros donde la columna `nombre` no comienza con 'J'.
             ➡ Ejemplo: SELECT * FROM usuarios WHERE edad NOT BETWEEN 18 AND 25;
                 ➡ Devuelve todos los registros donde la columna `edad` no está entre 18 y 25.
+
+## Funciones de Agregación
+
+    ➡ COUNT: Cuenta el número de registros en un conjunto de resultados.
+        ➡ Ejemplo: SELECT COUNT(*) FROM usuarios;
+            ➡ Devuelve el número total de registros en la tabla `usuarios`.
+    ➡ SUM: Suma los valores de una columna numérica.
+        ➡ Ejemplo: SELECT SUM(precio) FROM productos;
+            ➡ Devuelve la suma total de los valores en la columna `precio` de la tabla `productos`.
+    ➡ AVG: Calcula el promedio de los valores de una columna numérica.
+        ➡ Ejemplo: SELECT AVG(edad) FROM usuarios;
+            ➡ Devuelve el promedio de los valores en la columna `edad` de la tabla `usuarios`.
+    ➡ MIN: Devuelve el valor mínimo de una columna.
+        ➡ Ejemplo: SELECT MIN(precio) FROM productos;
+            ➡ Devuelve el valor mínimo en la columna `precio` de la tabla `productos`.
+    ➡ MAX: Devuelve el valor máximo de una columna.
+        ➡ Ejemplo: SELECT MAX(edad) FROM usuarios;
+            ➡ Devuelve el valor máximo en la columna `edad` de la tabla `usuarios`.
+    ➡ RANDOM: Genera un número aleatorio.
+        ➡ Ejemplo: SELECT * FROM usuarios ORDER BY RANDOM();
+            ➡ Devuelve un registro aleatorio de la tabla `usuarios`.
+    ➡ ROUND: Redondea un número a un número especificado de decimales.
+        ➡ Ejemplo: SELECT ROUND(AVG(precio), 2) FROM productos;
+            ➡ Devuelve el promedio valores de la columna `precio` redondeados a 2 decimales en la tabla `productos`.
