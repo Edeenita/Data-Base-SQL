@@ -78,10 +78,34 @@
             ➡ Read (Leer): SELECT * FROM *nombre de la tabla*;
             ➡ Update (Actualizar): UPDATE *nombre de la tabla* SET campo1 = 'valor1' WHERE condición;
             ➡ Delete (Eliminar): DELETE FROM *nombre de la tabla* WHERE condición;
-        ➡ AS: Se utiliza para renombrar una columna o tabla en una consulta SQL 
-               sin modificar el nombre original en la base de datos.
+    ➡ AS: Se utiliza para renombrar una columna o tabla en una consulta SQL 
+            sin modificar el nombre original en la base de datos.
             ➡ Ejemplo: SELECT precio*2 AS precio_doble FROM productos;
                 ➡ Esto renombra la columna `precio*2` a `precio_doble` en la consulta.
+    ➡ ORDER BY: Se utiliza para ordenar los resultados de una consulta SQL por una o más columnas.
+            ➡ Ejemplo: SELECT * FROM usuarios ORDER BY apellido ASC;
+                ➡ Esto ordena los resultados por la columna `apellido` en orden ascendente.
+            ➡ `ASC` para orden ascendente (por defecto) y `DESC` para orden descendente.
+                ➡ Ejemplo: SELECT * FROM usuarios ORDER BY edad DESC;
+                    ➡ Esto ordena los resultados por la columna `edad` en orden descendente.
+            ➡ Prioridad de ordenamiento en SQL:
+                1. NULL: Se consideran los más bajos en el ordenamiento.
+                    ➡ Para que evitar que se vean los NULL al principio:
+                        ➡ *ASC NULLS LAST*
+                    ➡ Para ver los NULL al principio:
+                        ➡ *DESC NULL FIRST*
+                2. Boolean (TRUE/FALSE): se ordenan con FALSE antes de TRUE.
+                3. Integer/Real/Float/Numeric/Decimal: Los enteros se ordenan en orden numérico.
+                6. Date/Time: Se ordenan cronológicamente.
+                7. Text/String: Orden alfabético según el conjunto de caracteres del SGBD.
+                    ➡ Caracteres especiales: Los caracteres especiales tienen su propia jerarquía 
+                    y se ordenan antes de los caracteres alfanuméricos.
+                        ➡ Jerarquía de caracteres especiales: !, ", #, $, %, &, ', (, ), *, +, ,, -, ., /, :, ;,
+                        <, =, >, ?, @, [, \, ], ^, _, `, {, |, }, ~
+                8. Blob: Los binarios no se ordenan directamente.
+    ➡ DISTINCT: Eliminar los registros duplicados en los resultados de una consulta SQL.
+        ➡ Ejemplo: SELECT DISTINCT nombre FROM usuarios;
+            ➡ Devuelve solo los nombres únicos y sin repetir de la columna `nombre` en la tabla `usuarios`.
     ➡ ID: Identificador único para cada registro en una tabla.
             ➡ Clave primaria (Primary Key): Un campo o combinación de 
             campos que identifica de manera única cada registro en una tabla.
