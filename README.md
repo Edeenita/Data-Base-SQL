@@ -175,16 +175,24 @@
 
 ### Ejercicio 2 de consultas con WHERE 🤓☝🏻
 
-1️⃣ Encuentra todas las ventas realizadas por el empleado con ID 3.
-2️⃣ Lista todos los productos que puedes comprar por menos de $20.
-3️⃣ Muestra los clientes que NO son de México.
-4️⃣  Muestra los productos que tienen una categoria ID 4
-5️⃣Lista los empleados que nacieron antes de 1960.
-6️⃣ Encuentra los productos que cuestan entre $10 y $30.
-7️⃣ Muestra los proveedores que no son de Estados Unidos ni del Reino Unido.
-8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
-9️⃣ Lista todos los productos que puedes comprar por menos de $15 o sea carne 
-    pero que su proveedor de carne sea ID 7
+    1️⃣ Encuentra todas las ventas realizadas por el empleado con ID 3.
+
+    2️⃣ Lista todos los productos que puedes comprar por menos de $20.
+
+    3️⃣ Muestra los clientes que NO son de México.
+
+    4️⃣  Muestra los productos que tienen una categoria ID 4
+
+    5️⃣Lista los empleados que nacieron antes de 1960.
+
+    6️⃣ Encuentra los productos que cuestan entre $10 y $30.
+
+    7️⃣ Muestra los proveedores que no son de Estados Unidos ni del Reino Unido.
+
+    8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
+    
+    9️⃣ Lista todos los productos que puedes comprar por menos de $15 o sea carne 
+        pero que su proveedor de carne sea ID 7
 
 #### Posibles Soluciones:
     1️⃣ SELECT * FROM Orders WHERE EmployeeID = 3
