@@ -80,8 +80,8 @@
             ➡ Delete (Eliminar): DELETE FROM *nombre de la tabla* WHERE condición;
         ➡ AS: Se utiliza para renombrar una columna o tabla en una consulta SQL 
                sin modificar el nombre original en la base de datos.
-            ➡ Ejemplo: SELECT nombre AS NombreCliente FROM usuarios;
-            ➡ Esto renombra la columna `nombre` a `NombreCliente` en la consulta.
+            ➡ Ejemplo: SELECT precio*2 AS precio_doble FROM productos;
+                ➡ Esto renombra la columna `precio*2` a `precio_doble` en la consulta.
     ➡ ID: Identificador único para cada registro en una tabla.
             ➡ Clave primaria (Primary Key): Un campo o combinación de 
             campos que identifica de manera única cada registro en una tabla.
