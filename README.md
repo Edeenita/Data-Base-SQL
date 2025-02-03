@@ -268,4 +268,4 @@
         ➡ Ejemplo: SELECT ROUND(AVG(precio), 2) FROM productos;
             ➡ Devuelve el promedio valores de la columna `precio` 
             redondeados a 2 decimales en la tabla `productos`.
-    
+## Subqueries
