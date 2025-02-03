@@ -183,7 +183,7 @@
 7️⃣ Muestra los proveedores que no son de Estados Unidos ni del Reino Unido.
 8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
 
-#### Soluciones:
+#### Posibles Soluciones:
     1️⃣ SELECT * FROM Orders WHERE EmployeeID = 3
     2️⃣ SELECT * FROM Products WHERE Price < 20
     3️⃣ SELECT * FROM Customers WHERE Country != "Mexico"
