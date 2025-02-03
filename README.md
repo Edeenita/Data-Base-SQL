@@ -125,6 +125,7 @@
                 ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IS NULL;
             11. `IS NOT NULL`: No es nulo
                 ➡ Ejemplo: SELECT * FROM usuarios WHERE edad IS NOT NULL;
+            12. `NOT`: Se utiliza para invertir el resultado de una condición en una consulta SQL.
     ➡ ID: Identificador único para cada registro en una tabla.
             ➡ Clave primaria (Primary Key): Un campo o combinación de 
             campos que identifica de manera única cada registro en una tabla.
@@ -182,14 +183,19 @@
 6️⃣ Encuentra los productos que cuestan entre $10 y $30.
 7️⃣ Muestra los proveedores que no son de Estados Unidos ni del Reino Unido.
 8️⃣ Lista los clientes cuyo nombre comience con la letra 'B'.
+9️⃣ Lista todos los productos que puedes comprar por menos de $15 o sea carne 
+    pero que su proveedor de carne sea ID 7
 
 #### Posibles Soluciones:
     1️⃣ SELECT * FROM Orders WHERE EmployeeID = 3
     2️⃣ SELECT * FROM Products WHERE Price < 20
     3️⃣ SELECT * FROM Customers WHERE Country != "Mexico"
+        ➡ SELECT * FROM Customers WHERE NOT Country = "Mexico"
     4️⃣ SELECT * FROM Products WHERE CategoryID = 4
     5️⃣ SELECT * FROM Employees WHERE BirthDate < '1960-01-01'
     6️⃣ SELECT * FROM Products WHERE Price BETWEEN 10 AND 30
         ➡  SELECT * FROM Products WHERE Price >= 10 AND Price <= 30
     7️⃣ SELECT * FROM Suppliers WHERE Country != 'USA' AND Country != 'UK'
+        ➡  SELECT * FROM Suppliers WHERE NOT Country = 'USA' AND NOT Country = 'UK'
     8️⃣ SELECT * FROM Customers WHERE CustomerName LIKE 'B%'
+    9️⃣ SELECT * FROM Products WHERE Price < 15 OR CategoryID = 6 AND SupplierID = 7
