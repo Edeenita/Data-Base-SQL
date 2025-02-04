@@ -268,4 +268,23 @@
         ➡ Ejemplo: SELECT ROUND(AVG(precio), 2) FROM productos;
             ➡ Devuelve el promedio valores de la columna `precio` 
             redondeados a 2 decimales en la tabla `productos`.
+
 ## Subqueries
+
+    ➡ Subqueries: Consultas anidadas dentro de otra consulta SQL.
+        ➡ Uso: Permiten realizar consultas complejas al utilizar el resultado de una consulta como entrada para otra consulta.
+        ➡ Ejemplo: SELECT * FROM empleados 
+                    WHERE salario > (SELECT AVG(salario) FROM empleados);
+            ➡ Esto devuelve todos los registros de la tabla `empleados` donde el salario es mayor 
+               que el salario promedio de todos los empleados.
+        ➡ Tipos de subqueries:
+            ➡ Subqueries en la cláusula `SELECT`:
+                ➡ Ejemplo: SELECT nombre,
+                            (SELECT COUNT(*) FROM pedidos WHERE pedidos.id_cliente = clientes.id_cliente) AS total_pedidos FROM clientes;
+                    ➡ Esto devuelve el nombre de cada cliente y el número total de pedidos realizados por cada cliente.
+            ➡ Subqueries en la cláusula `FROM`:
+                ➡ Ejemplo: SELECT AVG(salario) FROM (SELECT salario FROM empleados WHERE departamento = 'Ventas') AS ventas_salarios;
+                    ➡ Esto calcula el salario promedio de los empleados del departamento de ventas.
+            ➡ Subqueries en la cláusula `WHERE`:
+                ➡ Ejemplo: SELECT nombre FROM productos WHERE precio > (SELECT AVG(precio) FROM productos);
+                    ➡ Esto devuelve los nombres de los productos cuyo precio es mayor que el precio promedio de todos los productos.
